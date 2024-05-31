@@ -1,0 +1,148 @@
+body{
+    background-color: blueviolet;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    height: 350px;
+    width: 370px;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.lamp{
+    height: 30px;
+    width: 140px;
+    background-color: slategray;
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+.lamp:before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 8px;
+    left: 8px;
+    border-radius: 8px;
+}
+
+.stand{
+    height: 120px;
+    width: 12px;
+    background-color: rgb(28, 27, 29);
+    top: -110px;
+    position: absolute;
+    right: 25px;
+    transform: rotate(20deg);
+    z-index: -1;
+}
+
+.stand:before {
+    content: "";
+    height: 140px;
+    width: 12px;
+    background-color: rgb(28, 27, 29);
+    position: absolute;
+    bottom: 85px;
+    right: 50px;
+    transform: rotate(-45deg);
+}
+
+.stand:after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: gold;
+    border-radius: 50%;
+    left: -8px;
+    top: -5px;
+}
+
+.bulb{
+    height: 50px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: -227px;
+    left: -10%;
+    border-radius: 50% 50% 0 0;
+    transform: rotate(50deg);
+}
+
+.bulb:before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #fec93d;
+    border-radius: 50%;
+    left: 45px;
+    top: -15px;
+}
+
+.bulb:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    background-color: gold;
+    top: 45px;
+    border-radius: 20%;
+}
+
+input[type="checkbox"] {
+    -Webkit-Appearance:none;
+    height: 12px;
+    width: 18px;
+    background-color: #fec93d;
+    position: absolute;
+    bottom: 26px;
+    left: 10%;
+    border-radius: 25% 25% 0 0;
+    z-index: -1;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 65px;
+    border-bottom: 280px solid rgba(255, 255, 255, 0.5);
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    top: -235px;
+    left: -150px;
+    transform: rotate(40deg);
+    display: none;
+}
+
+input[type="checkbox"]:checked{
+    height: 9px;
+}
+
+input[type="checkbox"]:checked:before {
+    display: block;
+}
+
+.heading{
+    top: 90px;
+    left: 45%;
+    position: absolute;
+}
+
+.creater{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
